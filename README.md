@@ -9,6 +9,11 @@ A chaque fois que vous recherchez sur Google, l'extension recherche en même tem
 
 ## Installation
 
-Télécharger la dernière release et faites la glisser dans l'onglet extensions de Google Chrome.
+### Google Chrome / Chromnium
+~~Télécharger la dernière release et faites la glisser dans l'onglet extensions de Google Chrome.~~
+Actuellement non fonctionnel
+
+### Firefox
+Visitez [la branche Firefox](https://github.com/EmerickH/EcoGoogle/tree/Firefox)
 
 [![CC](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
