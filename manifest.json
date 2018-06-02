@@ -17,21 +17,18 @@
   },
   "permissions": [
     "tabs",
-    "https://*.google.com/* ",
-	"https://*.google.fr/* ",
-	"https://*.ecosia.org/* ",
+    "<all_urls>",
 	"webRequest",
-	"webRequestBlocking",
-	"\u003Call_urls>"
+	"webRequestBlocking"
   ],
   "content_scripts": [
     {
-      "matches": ["https://*.google.com/search*", "https://*.google.*/search*"],
+      "matches": ["http://*/search*", "https://*/search*"],
       "js": ["src/inject/inject.js"],
       "all_frames": true
     },
 	{
-      "matches": ["https://*.ecosia.org/search*"],
+      "matches": ["https://*.ecosia.org/*"],
       "js": ["src/inject/tree.js"],
       "all_frames": true
     }
