@@ -9,6 +9,11 @@ A chaque fois que vous recherchez sur Google, l'extension recherche en même tem
 
 ## Installation
 
+### Firefox
 Visitez [la page Firefox Add-Ons](https://addons.mozilla.org/fr/firefox/addon/ecosiagoogle/)
+
+### Chrome / Chromnium
+Télécharger la dernière release et faites la glisser dans l'onglet extensions de Google Chrome.
+
 
 [![CC](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)

@@ -11,19 +11,18 @@ if (search == 1) {
     var treemobile = document.getElementsByClassName("tree-counter-text-mobile")[0]; //get tree counter element
     var treecount =  treemobile.innerHTML; //get tree count
 
-    document.getElementsByClassName("result-wrapper")[0].style.display = "none"; //get wrapper and hide it
-    document.getElementsByClassName("search-header")[0].style.display = "none";
-    document.getElementsByClassName("navbar-row")[0].style.display = "none";
+    document.getElementsByClassName("results-page")[0].style.display = "none"; //get wrapper and hide it
     
-    document.getElementsByClassName("body-serp")[0].style.background = "white";
+    document.getElementsByClassName("body-serp")[0].style.background = "#fafafa";
 
     var cadre = document.createElement("div"); //create a div, put the tree count inside and insert it under body
     cadre.style.height = "100%";
-    cadre.style.width = "100%";
+    cadre.style.width = "90%";
     cadre.style.position = "absolute";
     cadre.style.top = "0";
     cadre.style.left = "0";
     cadre.style.fontSize = "25px";
+	cadre.style.textAlign = "Right";
     cadre.innerHTML = treecount;
     document.body.appendChild(cadre);
 }

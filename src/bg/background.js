@@ -5,7 +5,9 @@
 // https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe
 //*************************************************************************************************
 
-browser.webRequest.onHeadersReceived.addListener(
+var browser = browser || chrome
+
+window.browser.webRequest.onHeadersReceived.addListener(
   function (details) {
     for (var i = 0; i < details.responseHeaders.length; ++i) {
       if (details.responseHeaders[i].name.toLowerCase() == 'x-frame-options') {
