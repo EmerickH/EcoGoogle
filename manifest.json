@@ -1,6 +1,6 @@
 {
   "name": "EcoGoogle",
-  "version": "2.0",
+  "version": "2.1",
   "manifest_version": 2,
   "description": "Ecosia with Google",
   "homepage_url": "https://github.com/EmerickH/EcoGoogle/",
@@ -19,7 +19,8 @@
     "tabs",
     "<all_urls>",
 	"webRequest",
-	"webRequestBlocking"
+	"webRequestBlocking",
+    "storage"
   ],
   "content_scripts": [
     {
@@ -33,5 +34,12 @@
       "all_frames": true
     }
   ],
+  "browser_action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
   "web_accessible_resources": ["ecosia.png"]
 }

@@ -7,7 +7,7 @@
 
 var browser = browser || chrome
 
-window.browser.webRequest.onHeadersReceived.addListener(
+browser.webRequest.onHeadersReceived.addListener(
   function (details) {
     for (var i = 0; i < details.responseHeaders.length; ++i) {
       if (details.responseHeaders[i].name.toLowerCase() == 'x-frame-options') {
